@@ -1,0 +1,142 @@
+.modal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 1% auto 1% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 80%;
+  width: 400px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.text-modal {
+  width: 100%;
+  height: 100px;
+  padding: 0.75rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 1px solid black;
+  resize: none;
+}
+
+.btn-modal {
+  width: 100%;
+  border: 1px solid #ecb5b5;
+  background-color: #ecb5b5;
+  border-radius: 10px;
+  color: rgb(34, 33, 33);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+textarea:focus:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0 2px rgba(255, 0, 76, 0.25);
+}
+
+.btn-modal:focus {
+  background-color: #742c2c;
+  color: whitesmoke;
+}
+
+.btn-modal:focus,
+.text-modal:focus {
+  border: 1px solid rgb(228, 82, 82);
+}
+
+.btn-modal:hover,
+.text-modal:hover {
+  border: 1px solid rgb(184, 123, 123);
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.open-modal {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  background-color: red;
+  opacity: 1;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+  transition: width 0.1s, height 0.1s, opacity 100ms linear;
+}
+
+#open-modal:hover {
+  width: 80px;
+  height: 80px;
+}
+
+.open-modal_click {
+  opacity: 0;
+}
+
+.modal-content_visible {
+  opacity: 1;
+}
+
+.error-container {
+  display: none;
+  border: 1px solid #d12c2c;
+  padding: 0.55rem;
+  border-radius: 9px;
+  width: 35%;
+  background-color: white;
+  margin: auto;
+  position: absolute;
+  left: 33%;
+  top: 51%;
+}
+
+.success-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  background: #261D11;
+  color: #F2E2C4;
+  font-size: 1rem;
+}
